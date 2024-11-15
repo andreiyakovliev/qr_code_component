@@ -8,5 +8,6 @@ HTML, CSS (SCSS), GULP, Figma.
 
 ### Author: Andrii Yakovliev
 [UpWork](https://www.upwork.com/freelancers/~01a75a9a5d09ef15a6)
+[Portfolio](https://andreiyakovliev.github.io/portfolio)
 
 [Live Preview](https://andreiyakovliev.github.io/qr_code_component)
