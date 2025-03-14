@@ -1,0 +1,112 @@
+body {
+   background: $lightGray;
+}
+
+.wrapper {
+   display: grid;
+   place-items: center
+}
+
+.page {
+
+   // .page__qrcode
+
+   &__qrcode {}
+}
+
+.qrcode {
+
+   // .qrcode__container
+
+   &__container {}
+
+   // .qrcode__item
+
+   &__item {
+      padding: toRem(16) toRem(16) toRem(40) toRem(16);
+      max-width: toRem(320);
+
+   }
+}
+
+.item-qrcode {
+   background: #ffffff;
+   border-radius: toRem(20);
+
+   box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+
+   // .item-qrcode__image
+
+   &__image {
+      position: relative;
+      padding: toRem(64);
+      background: $lightBlue;
+      margin-bottom: toRem(24);
+      border-radius: toRem(10);
+      overflow: hidden;
+
+      &::before,
+      &::after {
+         content: '';
+         /* Необхідно для відображення псевдо-елементів */
+         position: absolute;
+         width: toRem(328);
+         height: toRem(328);
+         background: #ffff;
+         border-radius: 50%;
+         opacity: 0.07;
+      }
+
+      &::before {
+         top: 57%;
+         /* Позиціонування круга */
+         left: 60%;
+         /* Позиціонування круга */
+      }
+
+      &::after {
+         bottom: 44%;
+         /* Позиціонування круга */
+         right: 31%;
+         /* Позиціонування круга */
+      }
+
+
+
+      img {
+         max-width: 100%;
+      }
+   }
+
+   // .item-qrcode__body
+
+   &__body {}
+
+   // .item-qrcode__title
+
+   &__title {
+      /* Heading */
+      color: $darkBlue;
+      font-family: "Outfit";
+      font-size: toRem(22);
+      font-weight: 700;
+      line-height: math.div(28, 22);
+      letter-spacing: em(28, 22);
+      text-align: center;
+
+      margin-bottom: toRem(16);
+   }
+
+   // .item-qrcode__text
+
+   &__text {
+      padding: toRem(0) toRem(16);
+      /* Body */
+      color: $mainColor;
+      font-family: "Outfit";
+      line-height: 19px;
+      line-height: math.div(19, 15);
+      letter-spacing: em(0.19, 15);
+      text-align: center;
+   }
+}
